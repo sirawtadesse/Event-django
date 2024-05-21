@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}
+Events
+{% endblock %}
+
+{%block content%}
+<h1 class="text-center">EVENTS</h1>
+<div class="container">
+    <div class="row">
+        {% for i in eve %} 
+        <div class="col-md-4">
+            <div class="card text-center" style="margin: 20px;">
+                <img src="{{ i.img.url }}" class="card-img-top" alt="" height="150px" width="200px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.name }}</h5>
+                    <p class="card-text">{{ i.desc }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

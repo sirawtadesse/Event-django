@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{%block title%}
+About
+{% endblock %}
+
+{%block content%}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Our Ethiopian Event Management System</h2>
+            <p>Welcome to our Ethiopian Event Management System! We are dedicated to providing a comprehensive platform for organizing and participating in various events across Ethiopia.</p>
+            <p>Our system caters to a diverse range of events including cultural festivals, music concerts, sports tournaments, business conferences, and more.</p>
+            <p>Here are some key features of our system:</p>
+            <ul>
+                <li>Easy event registration process for organizers and participants</li>
+                <li>Secure online ticketing system</li>
+                <li>Interactive event scheduling and agenda management</li>
+                <li>Real-time communication channels for event updates and announcements</li>
+                <li>Integration with popular payment gateways for seamless transactions</li>
+            </ul>
+            <p>Whether you're an event organizer looking to reach a wider audience or an enthusiastic participant eager to explore the vibrant culture and entertainment scene in Ethiopia, our platform is designed to meet your needs.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/e7.jfif' %}" alt="About Image" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
